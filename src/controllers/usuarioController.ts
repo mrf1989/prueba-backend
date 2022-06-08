@@ -59,6 +59,7 @@ export class UsuarioController {
 
   @POST("/usuarios")
   public async createUsuario(@RequestBody() payload: Usuario) {
+    console.log("USER PAYLOAD:", payload);
     const usuario = payload as Usuario;
     return await this.usuarioService.createUsuario(usuario);
   }
