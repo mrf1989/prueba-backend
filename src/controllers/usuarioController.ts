@@ -75,17 +75,9 @@ export class UsuarioController {
     return JSON.stringify(res);
   }
 
-  @GET("/login-success")
-  public loginUsuarioSuccess(
-    @AuthPrincipal() usuario: Mandarine.Types.UserDetails,
-    @ResponseParam() response: Response,
-  ) {
-    console.log(`Login success: ${usuario.username} (${usuario.uid}). Hello!`);
-    response.headers.set("Content-Type", "application/json");
-    return JSON.stringify({
-      id: usuario.uid,
-      username: usuario.username,
-    });
+  @GET("/login")
+  public loginUsuarioSuccess() {
+    console.log("HELLO WORLD!");
   }
 
   @GET("/logout-success")
