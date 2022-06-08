@@ -4,6 +4,7 @@ export {
   AuthPrincipal,
   Component,
   Controller,
+  Cors,
   DELETE,
   GET,
   Mandarine,

@@ -2,6 +2,7 @@ import {
   AllowOnly,
   AuthPrincipal,
   Controller,
+  Cors,
   DELETE,
   GET,
   Mandarine,
@@ -15,6 +16,9 @@ import { UsuarioService } from "../services/services.ts";
 import { Usuario } from "../models/models.ts";
 
 @Controller("/api")
+@Cors({
+  origin: "*",
+})
 export class UsuarioController {
   constructor(
     private readonly usuarioService: UsuarioService,
