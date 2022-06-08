@@ -1,0 +1,18 @@
+version: "3.8"
+services:
+  web:
+    container_name: "muevete-api"
+    build: .
+    ports:
+      - "8080:8080"
+    links:
+      - mongo
+  mongo:
+    container_name: "muevete-db"
+    image: mongo
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodata:/data/db
+volumes:
+  mongodata:

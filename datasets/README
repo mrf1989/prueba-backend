@@ -1,0 +1,9 @@
+Se requiere instalar MongoDB Database Tools y referenciar en el PATH del sistema.
+
+Para realizar la exportación de los datos de la base de datos MongoDB
+
+$ mongoexport --db=muevete --collection=usuarios --type=json --out=./datasets/usuarios.json
+
+Para realizar la importación de los datos a la base datos MongoDB
+
+$ mongoimport --db=muevete --collection=usuarios --file=./datasets/usuarios.json

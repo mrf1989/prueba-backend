@@ -1,0 +1,50 @@
+<diagram program="umletino" version="14.4.0-SNAPSHOT"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>120</x><y>67</y><w>190</w><h>140</h></coordinates><panel_attributes>Evento
+--
+nombre: string
+descripcion: string
+objetivoKm: number
+fechaCreacion: Date
+fechaInicio: Date
+fechaFin: Date
+modalidad: string[]</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>140</x><y>297</y><w>150</w><h>60</h></coordinates><panel_attributes>Dorsal
+--
+num: number
+lema: string</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>140</x><y>467</y><w>150</w><h>90</h></coordinates><panel_attributes>Esfuerzo
+--
+numKm: number
+fecha: Date
+comentario: string
+modalidad: string</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>730</x><y>287</y><w>150</w><h>140</h></coordinates><panel_attributes>Artículo
+--
+titulo: string
+subtítulo: string
+fecha: Date
+cuerpo: string
+categoria: string
+referencia: string
+enlaceImagen: string</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>430</x><y>197</y><w>150</w><h>170</h></coordinates><panel_attributes>Usuario
+--
+username: string
+password: string
+rol: string
+nombre: string
+apellidos: string
+fechaNacimiento: Date
+email: string
+telefono: string
+ciudad: string</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>200</x><y>200</y><w>80</w><h>120</h></coordinates><panel_attributes>lt=-
+m1=1
+m2=*
+inscrito &gt;</panel_attributes><additional_attributes>10;10;10;100</additional_attributes></element><element><id>Relation</id><coordinates><x>280</x><y>320</y><w>170</w><h>50</h></coordinates><panel_attributes>lt=-
+m1=*
+m2=1
+pertenece &gt;</panel_attributes><additional_attributes>10;20;150;20</additional_attributes></element><element><id>Relation</id><coordinates><x>280</x><y>360</y><w>260</w><h>190</h></coordinates><panel_attributes>lt=-
+m1=*
+m2=1
+esRealizado &gt;</panel_attributes><additional_attributes>10;160;230;160;230;10</additional_attributes></element><element><id>Relation</id><coordinates><x>200</x><y>350</y><w>90</w><h>140</h></coordinates><panel_attributes>lt=-
+m1=1
+m2=*
+asignado &gt;</panel_attributes><additional_attributes>10;10;10;120</additional_attributes></element><element><id>Relation</id><coordinates><x>570</x><y>320</y><w>180</w><h>50</h></coordinates><panel_attributes>lt=-
+m1=1
+m2=*
+&lt; publicadoPor</panel_attributes><additional_attributes>10;20;160;20</additional_attributes></element></diagram>

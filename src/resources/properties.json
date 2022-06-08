@@ -1,0 +1,16 @@
+{
+  "mandarine": {
+    "server": {
+      "host": "0.0.0.0",
+      "port": "${PORT}",
+      "responseType": "application/json",
+      "enableSessions": true
+    },
+    "authentication": {
+      "cookie": {
+        "httpOnly": true,
+        "secure": true
+      }
+    }
+  }
+}
