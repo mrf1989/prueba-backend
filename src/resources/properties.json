@@ -6,11 +6,5 @@
       "responseType": "application/json",
       "enableSessions": true
     }
-    // "authentication": {
-    //   "cookie": {
-    //     "httpOnly": true,
-    //     "secure": true
-    //   }
-    // }
   }
 }
